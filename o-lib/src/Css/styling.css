@@ -296,31 +296,39 @@
   }
   .custom-slider{
     width: 100%;
-    height: 500px;
   
   
   }
   .carousel-item1{
-    background-image: url(../Images/b1.jpg);
+    background-image: url(../Images/l2.jpg);
     width: 100%;
-    height: 500px;
+    height: 460px;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .carousel-item2{
-    background-image: url(../Images/b3.jpg);
+    background-image: url(../Images/l4.jpg);
     width: 100%;
-    height: 500px;
+    height: 460px;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .slide-content{
    
-    color: whitesmoke;
+    color: black;
   }
   
   .slide-content h2{
     font-size: 60;
+    color: black;
+
   }
   .slide-content p{
     margin-top: 20px;
     font-size: 20px;
+    color: black;
+    font-weight: 900;
+
   }
   .welcome{
     width: 80vh;
@@ -356,7 +364,7 @@
   @media only screen and (max-width: 480px){
     .banner_main{
       width: 100%;
-      height: auto;
+      height: 525px;
       background-color: whitesmoke;
       overflow: hidden;
       position: relative;
@@ -364,16 +372,24 @@
     }
     .custom-slider{
       width: 100%;
-    
+      height: 500px;
     
     }
     .carousel-item1{
-      background-image: url(../Images/b1.jpg);
+      background-image: url(../Images/l2.jpg);
       width: 100%;
+      height: 460px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
     }
     .carousel-item2{
-      background-image: url(../Images/b3.jpg);
+      background-image: url(../Images/l4.jpg);
       width: 100%;
+      height: 460px;
+      background-repeat: no-repeat;
+      background-size: cover;
+
     }
     .slide-content{
    
@@ -399,10 +415,11 @@
       border-radius: 10px;
       margin: 25% auto;
       margin-bottom: 0;
+      margin-top: 5%;
     }
     .welcome h4{
       font-size: 15px;
-      color: white;
+      color: black;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -457,14 +474,18 @@
     
     }
     .carousel-item1{
-      background-image: url(../Images/b1.jpg);
+      background-image: url(../Images/l2.jpg);
       width: 100%;
-      height: 590px;
+      height: 460px;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
     .carousel-item2{
-      background-image: url(../Images/b3.jpg);
+      background-image: url(../Images/l4.jpg);
       width: 100%;
-      height: 590px;
+      height: 460px;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
     .slide-content{
      
@@ -597,12 +618,12 @@
   
     
     
-    .courses-page{
+    .Eservices-page{
       width: 100%;
       height: 1000px;
       background-color: whitesmoke;
     }
-    .courses-page h1{
+    .Eservices-page h1{
       font-size: 30px;
       margin-left: 15vh;
       padding-top: 40px;
@@ -620,7 +641,7 @@
       
     
     }
-    .course-container{
+    .Eservices-container{
       display: flex;
       flex-wrap: wrap;
       align-items: center;
@@ -633,7 +654,7 @@
     
     
     }
-    .courses{
+    .Eservices{
       height: 30vh;
       width: 30%;
       margin: 10px;
@@ -647,12 +668,12 @@
     
     
     }
-    .courses:hover {
+    .Eservices:hover {
       background: linear-gradient( to right, rgb(1, 1, 90), #e7a33c);
       transform: translatey(-20px);
       color: white;
     }
-    .courses h3{
+    .Eservices h3{
       margin-top: 20vh;
       text-align: center;
     }
@@ -669,21 +690,21 @@
   
   
   @media only screen and (max-width: 480px){
-    .courses-page{
+    .Eservices-page{
       width: 100%; 
       height: auto;
       background-color: whitesmoke;
     }
-    .courses-page h1{
-      font-size: 120%;
+    .Eservices-page h1{
+      font-size: 20px;
       margin-left: 15%;
       padding-top: 13%;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
     }
    
-    .courses-vertical{
-      height: 10%;
+    .Eservices-vertical{
+      height: 9%;
       width: 2px;
       background-color: orange ;
       position: absolute;
@@ -693,7 +714,7 @@
       
   
     }
-    .course-container{
+    .Eservices-container{
       display: flex;
       flex-wrap: wrap;
       align-items: center;
@@ -705,7 +726,7 @@
     
     
     }
-    .courses{
+    .Eservices{
       height: 20vh;
       width: 30%;
       margin: 3% auto;
@@ -718,36 +739,39 @@
     
     
     }
-    .courses:hover {
+    .Eservices:hover {
       background: linear-gradient( to right, rgb(1, 1, 90), #e7a33c);
       transform: translatey(-20px);
       color: white;
     }
-    .courses h3{
-      margin-top: 70%;
+    .Eservices h3{
+      margin-top: 50%;
       text-align: center;
-      font-weight: 900;
-      font-size: 12px;
+      font-weight: 650;
+      font-size: 13px;
+    }
+    .Eservices p{
+      display: none;
     }
   
   }
   @media only screen and (min-width: 481px) and (max-width: 2048px){
-    .courses-page{
+    .Eservices-page{
       width: 100%;
       height: auto;
       background-color: whitesmoke;
     }
-    .courses-page h1{
+    .Eservices-page h1{
       font-size: 60px;
       margin-left: 15vh;
       padding-top: 40px;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
     }
-    .courses-page h1 span{
+    .Eservices-page h1 span{
       color: orange;
     }
-    .courses-vertical{
+    .Eservices-vertical{
       height: 15vh;
       width: 3px;
       background-color: orange ;
@@ -758,7 +782,7 @@
       
     
     }
-    .course-container{
+    .Eservices-container{
       display: flex;
       flex-wrap: wrap;
       align-items: center;
@@ -770,7 +794,7 @@
     
     
     }
-    .courses{
+    .Eservices{
       height: auto;
       width: 30%;
       margin: 3% auto;
@@ -783,12 +807,12 @@
     
     
     }
-    .courses:hover {
+    .Eservices:hover {
       background: linear-gradient( to right, rgb(1, 1, 90), #e7a33c);
       transform: translatey(-20px);
       color: white;
     }
-    .courses h3{
+    .Eservices h3{
       margin-top: 40%;
       margin-bottom: 30%;
       text-align: center;
@@ -797,12 +821,12 @@
   
   }
   @media only screen and (min-width: 481px) and (max-width: 2048px) and (max-height: 990px){
-    .courses-page{
+    .Eservices-page{
       width: 100%;
       height: auto;
       background-color: whitesmoke;
     }
-    .courses-page h1{
+    .Eservices-page h1{
       font-size: 30px;
       margin-left: 10%;
       padding-top: 40px;
@@ -810,7 +834,7 @@
   
     
     }
-    .courses-vertical{
+    .Eservices-vertical{
       height: 15vh;
       width: 2px;
       background-color: orange ;
@@ -821,7 +845,7 @@
       
     
     }
-    .course-container{
+    .Eservices-container{
       display: flex;
       flex-wrap: wrap;
       align-items: center;
@@ -833,7 +857,7 @@
     
     
     }
-    .courses{
+    .Eservices{
       height: 30vh;
       width: 30%;
       margin: 10px;
@@ -847,12 +871,12 @@
     
     
     }
-    .courses:hover {
+    .Eservices:hover {
       background: linear-gradient( to right, rgb(1, 1, 90), #e7a33c);
       transform: translatey(-20px);
       color: white;
     }
-    .courses h3{
+    .Eservices h3{
       margin-top: 20vh;
       text-align: center;
       font-size: 20px;
@@ -863,12 +887,12 @@
   
   
   
-  .teachers-section{
+  .Team-section{
     width: 100%;
     height: 1000px;
     background-color: white;
   }
-  .vertical-teachers{
+  .vertical-Team{
     height: 10vh;
     width: 2px;
     background-color: orange ;
@@ -878,7 +902,7 @@
     margin-left: 15vh;
   
   }
-  .our-teacher{
+  .our-Team{
     padding-top: 15vh;
     margin-left: 20vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -888,10 +912,10 @@
   
   
   }
-  .our-teacher span{
+  .our-Team span{
     color: orange;
   }
-  .teachers-container{
+  .Team-container{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -904,7 +928,7 @@
   
   
   }
-  .teachers{
+  .Team{
     height: 50vh;
     width: 30%;
     margin: 10px;
@@ -920,11 +944,11 @@
   
   }
   
-  .teachers h3{
+  .Team h3{
     margin-top: 17vh;
     text-align: center;
   }
-  .teachers h4{
+  .Team h4{
     text-align: center;
     margin: 15px auto;
   }
@@ -979,13 +1003,13 @@
   
   
   @media only screen and (max-width: 480px){
-    .teachers-section{
+    .Team-section{
       width: 100%;
       height: auto;
       background-color: white;
     }
-    .vertical-teachers{
-      height: 7vh;
+    .vertical-Team{
+      height: 5vh;
       width: 2px;
       background-color: orange ;
       position: absolute;
@@ -994,7 +1018,7 @@
       margin-left: 5vh;
     
     }
-    .our-teacher{
+    .our-Team{
       padding-top: 5vh;
       margin-left: 7vh;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -1004,10 +1028,10 @@
     
     
     }
-    .our-teacher span{
+    .our-Team span{
       color: orange;
     }
-    .teachers-container{
+    .Team-container{
       display: flex;
       flex-wrap: wrap;
       align-items: center;
@@ -1019,7 +1043,7 @@
       border-radius: 10px;
     
     }
-    .teachers{
+    .Team{
       height: 50%;
       width: 30%;
       margin: 5% auto;
@@ -1034,13 +1058,15 @@
     
     }
     
-    .teachers h3{
+    .Team h3{
       margin-top: 60%;
       text-align: center;
     }
-    .teachers h4{
+    .Team h4{
       text-align: center;
       margin: 10% auto;
+      font-size: 13px;
+      font-weight: 500;
     }
     .t-info{
       background: linear-gradient(to right, rgb(0, 81, 255), rgba(255, 136, 0, 0.966));
@@ -1092,12 +1118,12 @@
   }
   
   @media only screen and (min-width: 481px) and (max-width: 2048px){
-    .teachers-section{
+    .Team-section{
       width: 100%;
       height: auto;
       background-color: white;
     }
-    .vertical-teachers{
+    .vertical-Team{
       height: 10vh;
       width: 3px;
       background-color: orange ;
@@ -1107,7 +1133,7 @@
       margin-left: 10%;
     
     }
-    .our-teacher{
+    .our-Team{
       padding-top: 5%;
       margin-left: 14%;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -1117,10 +1143,10 @@
     
     
     }
-    .our-teacher span{
+    .our-Team span{
       color: orange;
     }
-    .teachers-container{
+    .Team-container{
       display: flex;
       flex-wrap: wrap;
       align-items: center;
@@ -1132,7 +1158,7 @@
     
     
     }
-    .teachers{
+    .Team{
       height: auto;
       margin: 4% auto;
       border-radius: 10px;
@@ -1146,12 +1172,12 @@
     
     }
     
-    .teachers h3{
+    .Team h3{
       margin-top: 75%;
       text-align: center;
       font-size: 30px;
     }
-    .teachers h4{
+    .Team h4{
       text-align: center;
       margin: 9% auto;
       font-size: 30px;
@@ -1208,12 +1234,12 @@
   }
   
   @media only screen and (min-width: 481px) and (max-width: 2048px) and (max-height: 990px){
-    .teachers-section{
+    .Team-section{
       width: 100%;
       height: auto;
       background-color: white;
     }
-    .vertical-teachers{
+    .vertical-Team{
       height: 10vh;
       width: 2px;
       background-color: orange ;
@@ -1223,7 +1249,7 @@
       margin-left: 8%;
     
     }
-    .our-teacher{
+    .our-Team{
       padding-top: 3%;
       margin-left: 10%;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -1233,10 +1259,10 @@
     
     
     }
-    .our-teacher span{
+    .our-Team span{
       color: orange;
     }
-    .teachers-container{
+    .Team-container{
       display: flex;
       flex-wrap: wrap;
       align-items: center;
@@ -1248,7 +1274,7 @@
     
     
     }
-    .teachers{
+    .Team{
       height: auto;
       width: 30%;
       margin: 2% auto;
@@ -1263,12 +1289,12 @@
     
     }
     
-    .teachers h3{
+    .Team h3{
       margin-top: 17vh;
       text-align: center;
       font-size: 15px;
     }
-    .teachers h4{
+    .Team h4{
       text-align: center;
       margin: 15px auto;
       font-size: 15px;
@@ -1414,7 +1440,7 @@
         padding-top: 5vh;
         margin-left: 8vh;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 22px;
+        font-size: 30px;
         color: rgb(1, 1, 90);
         font-weight: bolder;
     
@@ -1814,14 +1840,18 @@
         border-radius: 5px;
         border: 1px solid black;
         font-weight: bolder;
+        font-size: 25px;
     
       }
-      input[type="number"]{
-        width: 80%;
+      input[type="tel"]{
+        width: 90%;
         padding: 10px;
+        margin-bottom: 5%;
         border-radius: 5px;
+        border: 1px solid black;
         font-weight: bolder;
-        
+        font-size: 25px;
+        margin-left: 6%;
     
       }
       textarea {
@@ -1833,6 +1863,8 @@
         border-radius: 5px;
         resize: vertical; 
         font-weight: bolder;
+        font-size: 25px;
+
   
       }
       textarea:focus {
@@ -1846,6 +1878,8 @@
         background-color: rgb(1, 1, 90);
         color: white;
         border-radius: 10px;
+        font-size: 20px;
+
       }
     
     }
@@ -2180,10 +2214,15 @@
     
     
       }
-      .dylan h1, .follow h1, .links h1{
+      .follow h1, .links h1{
         margin-top: 2%;
         text-align: center;
         font-size: 20px;
+      }
+      .Wangilah{
+        margin-top: 0;
+        font-size: 20px;
+
       }
       .dylan h3, .follow h3{
         margin-top: 20px;
@@ -2426,6 +2465,7 @@
     }
     .our-feature{
         margin-top: 10% ;
+        margin-bottom: 4%;
         margin-left: 13%;
         font-size: 15px;
         float: right;
@@ -2436,7 +2476,7 @@
     
     }
     .vertical{
-        height: 5%;
+        height: 6%;
         width: 2px;
         background-color: orange ;
         position: absolute;
@@ -2447,11 +2487,10 @@
     
     }
     .feature p{
-        margin-top: 15vh;
         margin-left: 2px;
-        font-size: 15px;
-        font-weight: 700px;
-        font-weight: 500;
+        font-size: 13px;
+        font-weight: 600px;
+        font-weight: 400;
     }
     .overall{
         display: flex;
@@ -2487,7 +2526,7 @@
       text-align: center;
       margin: 20px auto;
       font-size: 12px;
-      font-weight: 700;
+      font-weight: 500;
     }
     .container-b{
         width: 90%;
@@ -2502,7 +2541,7 @@
         text-align: center;
         margin-top: 15px;
         color: snow;
-        font-size: 22px;
+        font-size: 13px;
         margin-left: 10px;
         font-weight: bolder;
     }
@@ -2510,9 +2549,11 @@
       margin-top: 2vh;
     }
     .f-form input[type="text"]{
-      padding: 15px;
-      margin: 10px auto;
+      padding: 10px;
+      margin: 2% auto;
       width: 97%;
+      font-size: 13px;
+      color: black;
       
     }
     .f-button{
@@ -2683,7 +2724,7 @@
         background-color: orange ;
         position: absolute;
         float: left;
-        margin-top: 2%;
+        margin-top: 3.5%;
         margin-left: 14vh;
         
     
@@ -2894,7 +2935,7 @@
   
     }
     .about-container2 h4{
-      font-size: 30px;
+      font-size: 18px;
       color: rgb(1, 1, 90);
     }
     .about-container2 h4 span{
@@ -2903,6 +2944,7 @@
     .about h3{
       margin-left: 30px;
       margin-top: 35px;
+      font-size: 30px;
       
     }
     .about-container3{
@@ -2912,7 +2954,7 @@
     }
     .about-container3 h3{
       padding-top: 1px;
-      font-size: 25px;
+      font-size: 18px;
       color: rgb(1, 1, 90);
   
     }
@@ -2920,10 +2962,11 @@
       font-size: 15px;
       font-weight: 400;
     }
+    
    
    
     .vertical-about{
-      height: 5vh;
+      height: 10vh;
       width: 2px;
       background-color:orange;
       margin-left: 10px;
@@ -2946,15 +2989,16 @@
           font-weight: bold;
     }
     .Learn-more-button{
-      width: 20vh;
-      height: 50px;
+      width: auto;
+      height: auto;
+      padding: 2%;
       margin-left: 20px;
       border: 1px solid blue;
       margin-top: 30px;
       border-radius: 10px;
       background-color: rgb(1, 1, 90);
       color: white;
-      font-size: 20px;
+      font-size: 15px;
     
     }
     .division {
@@ -3105,6 +3149,8 @@
     
   }
   @media only screen and (min-width: 481px) and (max-width: 2048px) and (max-height: 990px){
+  
+    
     
     .about{
       width: 100%;
@@ -3124,11 +3170,11 @@
       color: orange;
     }
     .vertical-about{
-      height: 8vh;
+      height: 7vh;
       width: 2px;
       background-color:orange;
       margin-left: 7%;
-      margin-top: 1%;
+      margin-top: 0.2%;
       position: absolute;
      
     }

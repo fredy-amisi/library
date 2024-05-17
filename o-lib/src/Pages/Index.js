@@ -9,8 +9,8 @@ import Signup from "../Pages/Signup";
 import Scrollbutton from "../Components/Scrollbutton";
 import Feature from "../Components/Feature";
 import About from "../Pages/About";
-import Services from "./services";
-import Courses from "./Courses";
+import pServices from "./pservices";
+import Eservices from "./Eservices";
 import Team from "./Team";
 import { useNavigate } from "react-router-dom";
 
@@ -41,7 +41,7 @@ const Index =()=>{
 
     {
         id:2,
-        WelcomeText: 'WELCOME TO FASH TRANSPORT SERVICES',
+        WelcomeText: 'FASH TRANSPORT SERVICES',
         heading1 : 'Efficient Transportation Solutions: ',
         heading2 : 'Moving Your Goods Safely',
         description1 : 'Choose from our wide range of transport tracks ',
@@ -92,9 +92,9 @@ const Index =()=>{
         </Slider>
       </section>
       <About/>
-      <Services/>
+      <pServices/>
       <Feature/>
-      <Courses/>
+      <Eservices/>
       <Team/>
       
       <Scrollbutton/>

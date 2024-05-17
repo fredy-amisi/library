@@ -1,8 +1,30 @@
-import React, { useState } from 'react';
+import React, { useRef, useState} from 'react';
 import Scrollbutton from '../Components/Scrollbutton';
 import axios from 'axios';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_8ml0cb8', 'template_rhf0ikn', form.current, {
+        publicKey: 'ZR5Xxf0yJH0hkSOx-',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          console.log('message sent');
+          alert("thank you for contacting freddy!")
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
   const handleChange = (event) => {
     const name = event.target.name;
     const value = event.target.value;
@@ -11,24 +33,6 @@ const Contact = () => {
 
   const [inputs, setInputs] = useState({});
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-
-    try {
-      const { data } = await axios.post('http://localhost:80/api/email.php', inputs);
-
-      alert("Message Sent Successfully");
-
-      if (data.success) { // Use data instead of response
-        alert("Your message has been sent successfully. Thank you!")
-      } else {
-        alert(data.error);
-      }
-    } catch (error) {
-      console.log(error);
-      alert("Error Sending Message" + error.message)
-    }
-  };
 
   return (
     <div>
@@ -54,40 +58,37 @@ const Contact = () => {
         </div>
         <div className="contact-b">
           <div className="form">
-            <form onSubmit={handleSubmit}> {/* Use onSubmit event instead of onClick */}
+            <form ref={form} onSubmit={sendEmail}> 
               <div>
                 <input
                   type="text"
-                  name="name"
+                  name="user_name"
                   placeholder="Your Name"
                   required
                   onChange={handleChange}
                 />
                 <input
                   type="email"
-                  name="email"
+                  name="user_email"
                   placeholder="Your Email"
                   required
                   onChange={handleChange}
                 />
-              </div>
-              <div>
                 <input
                   type="tel"
-                  name="number"
+                  name="user_tel"
                   placeholder="Your Number"
                   required
                   onChange={handleChange}
                 />
-              </div>
-              <div>
+              
                 <textarea
-                  name="message"
+                 name="message"
                   placeholder="Enter Your message"
                   onChange={handleChange}
                 ></textarea>
               </div>
-              <button type="submit">Send Message</button>
+              <button type="submit" value="Send">Send Message</button>
             </form>
           </div>
           <div className="map"><h3>My Map Location</h3></div>

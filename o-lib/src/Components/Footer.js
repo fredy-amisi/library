@@ -5,7 +5,7 @@ const Footer = () => {
     <>
     <footer>
       <div className="dylan">
-        <h1>Wangilah and Sons Transport and Logistics LTD</h1>
+        <h1 className="Wangilah">Wangilah and Sons Transport and Logistics LTD</h1>
       </div>
       <div className="Copyright">
       <p className="Copyright">@Copyright - All Rights Reserved. Designed by Dylan</p>

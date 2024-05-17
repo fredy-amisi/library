@@ -19,7 +19,7 @@ const Navbar=()=>{
         <ul className={isMenuOpen ? "nav-links show" : "nav-links"}>
         <li><Link to="/Index" ><span>HOME</span></Link></li>
                <li><Link to="/About" ><span>ABOUT</span></Link></li>
-               <li><Link to="/Courses" > <span>SERVICES</span></Link></li>
+               <li><Link to="/Eservices" > <span>SERVICES</span></Link></li>
                <li><Link to="/Team" > <span>TEAM</span></Link></li>
                <li><Link to="/Gallery" > <span>GALLERY</span></Link></li>
                <li><Link to="/Blog" > <span>BLOG</span></Link></li>

@@ -6,15 +6,20 @@ import t4 from "../Images/t4.jpg";
 import t5 from "../Images/t5.jpg"
 import t6 from "../Images/t6.jpg";
 import Scrollbutton from "../Components/Scrollbutton";
+import ScrollAnimation from "../Components/ScrollAnimation ";
 
 const Team =()=>{
+  const { ref, isVisible } = ScrollAnimation();
+
     return(
         <div>
-            <div className="teachers-section">
-                <div className="vertical-teachers"></div>
-                <h1 className="our-teacher">MEET OUR <span>TEAM</span></h1>
-                <div className="teachers-container">
-                    <div className="teachers">
+            <div className="Team-section">
+            <div className={`scroll-animation ${isVisible ? 'isVisible' : ''}`} ref={ref}>
+                <div className="vertical-Team"></div>
+                <h1 className="our-Team">MEET OUR <span>TEAM</span></h1>
+                </div>
+                <div className="Team-container">
+                    <div className="Team">
                         <div className="curve"></div>
                         <div className="oval"></div>
                         <img className="t1" src={t1} alt="t1"/>
@@ -22,7 +27,7 @@ const Team =()=>{
                         <h4>Transport Manager</h4>
                         <div className="t-info"></div>
                     </div>
-                    <div className="teachers">
+                    <div className="Team">
                         <div className="curve"></div>
                         <div className="oval"></div>
                         <img className="t1" src={t2} alt="t1"/>
@@ -30,7 +35,7 @@ const Team =()=>{
                         <h4>Logistics Coordinator</h4>
                         <div className="t-info"></div>
                     </div>
-                    <div className="teachers">
+                    <div className="Team">
                         <div className="curve"></div>
                         <div className="oval"></div>
                         <img className="t1" src={t3} alt="t3"/>
@@ -38,7 +43,7 @@ const Team =()=>{
                         <h4>Customer Support Specialist</h4>
                         <div className="t-info"></div>
                     </div>
-                    <div className="teachers">
+                    <div className="Team">
                         <div className="curve"></div>
                         <div className="oval"></div>
                         <img className="t1" src={t4} alt="t1"/>
@@ -46,7 +51,7 @@ const Team =()=>{
                         <h4>Transport Planner</h4>
                         <div className="t-info"></div>
                     </div>
-                    <div className="teachers">
+                    <div className="Team">
                         <div className="curve"></div>
                         <div className="oval"></div>
                         <img className="t1" src={t5} alt="t5"/>
@@ -54,7 +59,7 @@ const Team =()=>{
                         <h4>Route Optimization Specialist</h4>
                         <div className="t-info"></div>
                     </div>
-                    <div className="teachers">
+                    <div className="Team">
                         <div className="curve"></div>
                         <div className="oval"></div>
                         <img className="t1" src={t6} alt="t6"/>

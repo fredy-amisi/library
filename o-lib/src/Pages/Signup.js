@@ -5,6 +5,7 @@ import Scrollbutton from "../Components/Scrollbutton";
 import "../Css/signup.css";
 
 const Signup=()=>{
+
     const handleChange=(event)=>{
         const name = event.target.name;
         const value = event.target.value;
@@ -65,11 +66,10 @@ const Signup=()=>{
                     <option value="Human Resource">Human Resource</option>
                     <option value="IT">IT</option>
 
-
                 </select>
 
 
-                <input  type="mobile"  name="phonenumber"  onChange={handleChange}
+                <input  type="tel"  name="phonenumber"  onChange={handleChange}
                  placeholder=" your phone Number" required/>
             </div>
         

@@ -1,8 +1,16 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import l7 from "../Images/l7.jpg";
 import Scrollbutton from "../Components/Scrollbutton";
+import ScrollAnimation from "../Components/ScrollAnimation ";
+import '../Css/ScrollAnimation.css'
+
 
 const About = () => {
+
+  const { ref, isVisible } = ScrollAnimation();
+
+
+
   useEffect(() => {
     let transportsCount = 100;
     let routesCount = 50;
@@ -43,10 +51,13 @@ const About = () => {
     };
   }, []);
 
+
   return (
     <div className="about">
+      <div className={`scroll-animation ${isVisible ? 'isVisible' : ''}`} ref={ref}>
       <div className="vertical-about"></div>
       <h3>About<span> FASH TRANSPORT SERVICES</span></h3>
+      </div>
       <div className="all-containers">
         <div className="about-container1">
           <img className="a-image" src={l7} alt="" />

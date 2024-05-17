@@ -1,13 +1,18 @@
 import React from "react";
+import ScrollAnimation from "./ScrollAnimation ";
+import "../Css/ScrollAnimation.css"
 
 const Feature=()=>{
+  const { ref, isVisible } = ScrollAnimation();
+
     return(
         <div>
             <div className="feature">
+                <div className={`scroll-animation ${isVisible ? 'isVisible' : ''}`} ref={ref}>
+                <div className="vertical"></div>
                 <div className="our-feature">
                     <h1>DISCOVER OUR <span>FEATURES</span></h1>
                 </div>
-                <div className="vertical">
                 </div>
                 <p>Explore the exceptional features that distinguish FASH TRANSPORT SERVICES as a premier logistics solution provider.<br/> Benefit from a diverse range of services, enjoy seamless accessibility, and engage<br/> in interactive experiences tailored to your transport needs.</p>
 
